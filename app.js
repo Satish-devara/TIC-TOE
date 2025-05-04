@@ -23,11 +23,12 @@ boxes.forEach((box)=>{
     box.addEventListener("click",()=>{
         if(turnO){
             box.innerText = "O";
-            box.classList.remove("turnX");
+            box.classList.add("turnO");
+            
             turnO = false;
         }else{
             box.innerText = "X";
-            box.classList.remove("turnO");
+            box.classList.add("turnX");
             turnO = true;
         }
         box.disabled = true;
